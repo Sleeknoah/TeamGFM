@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#fff"
+    >
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="40dp"
+    android:layout_margin="10dp"
+    android:weightSum="3"
+    android:orientation="horizontal"
+    android:background="#19ffffff"
+    android:layout_marginTop="5dp">
+    <Button
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:text="Bible"
+        android:textColor="#fff"
+        android:id="@+id/bible"
+        android:background="@drawable/button"
+        android:elevation="30dp"
+        />
+    <Button
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:text="Devotional"
+        android:id="@+id/dev"
+        android:textColor="@color/colorPrimaryDark"
+        android:background="@drawable/button5"
+
+        />
+    <Button
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:text="Quotes"
+        android:id="@+id/quotes"
+        android:textColor="@color/colorPrimaryDark"
+        android:background="@drawable/button6"
+        />
+</LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:visibility="gone"
+        >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/txt"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/txxt"
+            android:layout_marginTop="10dp"
+            android:textColor="@color/colorPrimaryDark"
+            android:textStyle="bold"
+            />
+    </LinearLayout>
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ListView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/list"
+            android:dividerHeight="0dp"
+            android:paddingLeft="10dp"
+            android:layout_marginTop="10dp"
+            >
+        </ListView>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Advert here!!!"
+            android:layout_centerInParent="true"
+            android:layout_margin="10dp"
+            android:id="@+id/tt"
+            android:visibility="invisible"
+            />
+    <TimePicker
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/n2"
+        android:layout_centerHorizontal="true"
+        android:visibility="invisible"
+        ></TimePicker>
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/ima"
+            android:layout_below="@+id/n2"
+            android:layout_centerHorizontal="true"
+            android:text="Set Reminder"
+            android:visibility="invisible"/>
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:src="@drawable/instagram"
+        android:id="@+id/n3"
+        android:visibility="invisible"/>
+    </RelativeLayout>
+</LinearLayout>

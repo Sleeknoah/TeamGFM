@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.thegloriousfountainministries.exp2">
+
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <!-- if you want to load images from the internet -->
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <!-- if you want to load images from a file OR from the internet -->
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name=".pages.Splash"
+            android:theme="@style/MyTheme">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".pages.MainActivity"
+            android:label="@string/app_name"
+            android:theme="@style/AppTheme.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".pages.Errorr"
+            android:theme="@style/MyTheme" />
+        <activity
+            android:name=".pages.LoginClass"
+            android:theme="@style/MyTheme" />
+        <activity
+            android:name=".pages.Register"
+            android:theme="@style/MyTheme" />
+        <activity
+            android:name=".pages.Search"
+            android:theme="@style/TheTheme" />
+        <activity
+            android:name=".pages.BibleReader"
+            android:theme="@style/TheTheme" />
+
+        <receiver android:name=".broadcast.AlarmReciever" />
+
+        <service
+            android:name=".broadcast.RingtoneService"
+            android:enabled="true" />
+        <service
+            android:name=".FirebaseInstance">
+            <intent-filter>
+                <action android:name="com.google.firebase.INSTANCE_ID_EVENT"/>
+            </intent-filter>
+        </service>
+        <service
+            android:name=".FirebaseMessaging">
+            <intent-filter>
+                <action android:name="com.google.firebase.MESSAGING_EVENT"/>
+            </intent-filter>
+        </service>
+
+        <activity
+            android:name=".pages.Main2Activity"
+            android:theme="@style/TheTheme2"/>
+        <activity
+            android:name=".pages.Chat"
+            android:theme="@style/AppTheme.NoActionBar"
+            android:windowSoftInputMode="adjustUnspecified"
+            android:label="Connect"/>
+        <activity
+            android:name=".pages.Chat1"
+            android:theme="@style/AppTheme.NoActionBar"/>
+        <activity
+            android:name=".pages.Store"
+            android:theme="@style/MyAwesomeTheme3" />
+        <activity
+            android:name=".pages.Buy"
+            android:theme="@style/MyAwesomeTheme3" />
+        <activity
+            android:name=".pages.Cart"
+            android:theme="@style/MyAwesomeTheme" />
+        <activity
+            android:name=".pages.Web" />
+        <activity
+            android:name=".pages.EventsPage" />
+        <activity
+            android:name=".pages.Share"
+            android:label="Download"/>
+        <activity
+            android:name=".pages.Payment"
+            android:label="Make Payment"/>
+
+
+
+        <!--
+             Set custom default icon. This is used when no icon is set for incoming notification messages.
+             See README(https://goo.gl/l4GJaQ) for more.
+        -->
+        <meta-data
+            android:name="com.google.firebase.messaging.default_notification_icon"
+            android:resource="@drawable/gflogoss" />
+        <!--
+             Set color used with incoming notification messages. This is used when no color is set for the incoming
+             notification message. See README(https://goo.gl/6BKBk7) for more.
+        -->
+        <meta-data
+            android:name="com.google.firebase.messaging.default_notification_color"
+            android:resource="@color/colorPrimary" />
+
+        <meta-data
+        android:name="co.paystack.android.PublicKey"
+        android:value="pk_test_7a0e4f234c4e396fdc6145e80a646be12193bad1"/>
+
+        <!-- <activity -->
+        <!-- android:name="com.interswitchng.techquest.vervepayment.VervePayment" -->
+        <!-- android:label="" > -->
+        <!-- </activity> -->
+        <!-- <activity -->
+        <!-- android:name="com.interswitchng.techquest.vervepayment.LoginActivity" -->
+        <!-- android:label="" -->
+        <!-- &gt; -->
+        <!-- </activity> -->
+        <!-- <activity -->
+        <!-- android:name="com.interswitchng.techquest.vervepayment.VerifyPhoneActivity" -->
+        <!-- android:label="" > -->
+        <!-- </activity> -->
+        <!-- <activity -->
+        <!-- android:name="com.interswitchng.techquest.vervepayment.VerifyTokenActivity" -->
+        <!-- android:label="" > -->
+        <!-- </activity> -->
+        <!-- <activity -->
+        <!-- android:name="com.interswitchng.techquest.vervepayment.AddCardActivity" -->
+        <!-- android:label="" > -->
+        <!-- </activity> -->
+        <!-- <activity -->
+        <!-- android:name="com.interswitchng.techquest.vervepayment.ListCardsActivity" -->
+        <!-- android:label="" > -->
+        <!-- </activity> -->
+        <!-- <activity -->
+        <!-- android:name="com.interswitchng.techquest.vervepayment.base.BaseActivity" -->
+        <!-- android:label="" > -->
+        <!-- </activity> -->
+        <!-- <activity -->
+        <!-- android:name="com.interswitchng.techquest.vervepayment.PayWithExistingCardActivity" -->
+        <!-- android:label="" > -->
+        <!-- </activity> -->
+
+
+
+        <activity android:name=".pages.About"
+            android:label="About Us"/>
+        <activity android:name=".pages.VideoActivity"></activity>
+    </application>
+
+</manifest>

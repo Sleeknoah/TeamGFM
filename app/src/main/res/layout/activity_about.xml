@@ -1,0 +1,245 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.thegloriousfountainministries.exp2.pages.About">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <Button
+                android:id="@+id/expandableButton1"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="#673ab7"
+                android:drawableRight="@drawable/ic_arrow_drop_down_black_24dp"
+                android:onClick="expandableButton1"
+                android:paddingRight="10dp"
+                android:text="About TeamGFM"
+                android:textColor="#fff"
+                android:paddingLeft="16dp"
+                android:textAlignment="viewStart"
+                android:textSize="14dp"/>
+
+            <com.github.aakira.expandablelayout.ExpandableRelativeLayout
+                android:id="@+id/expandableLayout1"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_below="@+id/expandableButton1"
+                android:background="#b59edd"
+                android:padding="16dp"
+                app:ael_duration="400"
+                app:ael_expanded="false"
+                app:ael_interpolator="accelerate"
+                app:ael_orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="#FFFFFF"
+                    android:text="The Glorious Fountain Ministries has been in inception since June 15th 1994. This ministry is about WORSHIP and of course, the worship of the one and only true God. It is our joy to usher you into the throne room of the king of kings, where God is the only focus and worship is a natural response to His awesome majesty. Our heart's desire is to bring people to a place of deep and intimate personal relationship with God. Our watchword is from Revelation 22:1,
+and He showed me a clear river of water of life proceeding out of the throne of God and of the Lamb. Some of the worship events of the ministry includes; THE PASSION AND THE GLORY (every Easter), WORSHIP CONFERENCE (every July/August featuring School of Worship and Night of Worship), MOMENT OF GLORY (every September/October) and THE ENCOUNTER (the major annual event of the ministry, which holds every December). The Glorious Fountain Ministries enjoys the grace of God in immeasurable proportion that is very uncommon." />
+            </com.github.aakira.expandablelayout.ExpandableRelativeLayout>
+
+            <Button
+                android:id="@+id/expandableButton2"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/expandableLayout1"
+                android:background="#9c27b0"
+                android:drawableRight="@drawable/ic_arrow_drop_down_black_24dp"
+                android:onClick="expandableButton2"
+                android:paddingLeft="16dp"
+                android:paddingRight="10dp"
+                android:text="Our Mission and Vision"
+                android:textAlignment="viewStart"
+                android:textColor="#fff"
+                android:textSize="14dp" />
+
+            <com.github.aakira.expandablelayout.ExpandableRelativeLayout
+                android:id="@+id/expandableLayout2"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_below="@+id/expandableButton2"
+                android:background="#ba68c8"
+                android:padding="16dp"
+                app:ael_duration="400"
+                app:ael_expanded="false"
+                app:ael_interpolator="accelerate"
+                app:ael_orientation="vertical"
+                >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="#FFFFFF"
+                    android:text="To usher people into the presence of God where souls will be refreshed, revived, healed, delivered and saved as they encounter Jesus in our worship. in the process, we trust God to break the walls of division and unite us as one body in Christ. this has been the motivation behind our various kind of ministrations. Music is our majour tool to accomplish this mandate." />
+            </com.github.aakira.expandablelayout.ExpandableRelativeLayout>
+
+
+
+            <Button
+                android:id="@+id/expandableButton4"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/expandableLayout3"
+                android:background="#2196f3"
+                android:drawableRight="@drawable/ic_arrow_drop_down_black_24dp"
+                android:onClick="expandableButton4"
+                android:paddingLeft="16dp"
+                android:paddingRight="10dp"
+                android:text="Our Music"
+                android:textAlignment="viewStart"
+                android:textColor="#fff"
+                android:textSize="14dp" />
+
+            <com.github.aakira.expandablelayout.ExpandableRelativeLayout
+                android:id="@+id/expandableLayout4"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_below="@+id/expandableButton4"
+                android:background="#90caf9"
+                android:padding="16dp"
+                app:ael_duration="400"
+                app:ael_expanded="false"
+                app:ael_interpolator="accelerate"
+                app:ael_orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="#FFFFFF"
+                    android:text="The music of Glorious Fountain Ministries provides such a unique and rich quality of satisfaction to its audience irrespective of cultural background and other kinds of affinity. The wide range of style, form and expression which characterizes our music is the result of a rich blend of African and Western musical elements. While the African element is natural, the Western element is as a result of the influence of formal musical education, several artists and groups, like; the Integrity Music, Maranatha Singers and others. The traces of radical changes in the style and techniques used in some of our compositions bear marks of the contemporary music.
+The conventional materials normally employed in music are sometimes applied in an unusual manner to give a unique coloration. Most times, the music is very rhythmic. While the melody bears traces of pentatonic progression with some embellishment. Tonality is usually a serious factor to be considered in our indigenous African compositions. The harmony at some points is radically changed. The chord construction is with further addition of thirds, which result in eleventh and thirteenth chords. A chord progression which freely makes use of inversion is not uncommon. The singing combines beautifully the use of a well-arranged choral music, solos and/or duets compositions. At some other times, instrumental music, unison singing and key modulations are employed to create special effects or just to enhance the meaning of the text. The text of our composition is strongly tailored to help the audience focus on the Lord Jesus Christ, be it evangelistic, testimonial, an admonition or adoration. This can be easily seen in our various albums 'KABOD ENCOUNTER' 'GLORY DAWN' LION OF JUDAH, SELAH, LIGHT OF THE WORD ( A christmas Album) WORSHIP IN THE GLORY and GLORY IN THE HOUSE" />
+            </com.github.aakira.expandablelayout.ExpandableRelativeLayout>
+
+            <Button
+               android:id="@+id/expandableButton5"
+               android:layout_width="fill_parent"
+               android:layout_height="wrap_content"
+               android:layout_below="@+id/expandableLayout3"
+               android:background="#00bcd4"
+               android:drawableRight="@drawable/ic_arrow_drop_down_black_24dp"
+               android:onClick="expandableButton5"
+               android:paddingLeft="16dp"
+               android:paddingRight="10dp"
+               android:text="Replenish Charity Foundation"
+               android:textAlignment="viewStart"
+               android:textColor="#fff"
+               android:textSize="14dp" />
+
+            <com.github.aakira.expandablelayout.ExpandableRelativeLayout
+                android:id="@+id/expandableLayout5"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_below="@+id/expandableButton4"
+                android:background="#8bedf9"
+                android:padding="16dp"
+                app:ael_duration="400"
+                app:ael_expanded="false"
+                app:ael_interpolator="accelerate"
+                app:ael_orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="#FFFFFF"
+                    android:text="VISION
+To breathe life to dreams and destinies
+
+GOALS
+To seek, identify and support people with frustrated potentials.
+To be a blessing to as many especially to them in the house hold of faith. (Gal. 6:10).
+To create an enabling environment for many to fulfil the purposes of God for their lives.
+To support the expansion of God's kingdom agenda.
+To equip and empower dreams, visions, purposes and pursuits to the Glory of God.
+
+
+Replenish Education Funds
+This scheme has been designed to help provide partial or full scholarship to young and aspiring individuals with financial challenges (preventing them from pursuing their desired courses/studies at the higher level of education).
+
+We believe our little effor will not only help many realise their dream of College or University education, it will also deliver many from taking to the options of prostitution, robbery, cultism and other social vices. Your little contribution can help us do much more than we are already doing. Please join us today to restore hope and put a smile on some faces.
+
+
+Replenish Levetical Funds
+The Replenish Levetical funds is an arm of The Glorious Fountain Ministries' work in collaboration with her friends and allies. This fund is designed to help fund ministers and Ministries with proven record/potentials, prospects and obvious proves of a divine calling but limited by their location and financial constraints. We believe that they will do better if given the much needed assistance. This could be in the form of financial assistance, (monthly stipend or salaries), provision of instruments/equipment, renovation/provision of worship facilities/buildings, and all other welfare related assistance to enable such leaders and their families focus on their calling with little or no distractions. We are aware that there are gospel ministers who have to live with salaries as little as N3000 - N10,000 monthly in this present harsh economic conditions. We believe we can do something better. There are churches and ministers worshiping in terrible conditions and we want to change that. Please join us." />
+            </com.github.aakira.expandablelayout.ExpandableRelativeLayout>
+
+            <Button
+                android:id="@+id/expandableButton6"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/expandableLayout3"
+                android:background="#db4437"
+                android:drawableRight="@drawable/ic_arrow_drop_down_black_24dp"
+                android:onClick="expandableButton6"
+                android:paddingRight="10dp"
+                android:text="Friends and Allies Fellowship"
+                android:paddingLeft="16dp"
+                android:textAlignment="viewStart"
+                android:textColor="#fff"
+                android:textSize="14dp"/>
+            <com.github.aakira.expandablelayout.ExpandableRelativeLayout
+                android:id="@+id/expandableLayout6"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_below="@+id/expandableButton4"
+                android:background="#f98f86"
+                android:padding="16dp"
+                app:ael_duration="400"
+                app:ael_expanded="false"
+                app:ael_interpolator="accelerate"
+                app:ael_orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="#FFFFFF"
+                    android:text="The Open Handset Alliance (OHA) was formed in November 2007. The OHA is a business alliance comprised of many of the largest and most successful mobile companies on the planet. Its members include chip makers, handset manufacturers, software developers, and service providers.The entire mobile supply chain is well represented." />
+            </com.github.aakira.expandablelayout.ExpandableRelativeLayout>
+
+            <Button
+                android:id="@+id/expandableButton7"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/expandableLayout3"
+                android:background="#ff9800"
+                android:drawableRight="@drawable/ic_arrow_drop_down_black_24dp"
+                android:onClick="expandableButton7"
+                android:paddingLeft="16dp"
+                android:paddingRight="10dp"
+                android:text="Youth Ablaze Network"
+                android:textAlignment="viewStart"
+                android:textColor="#fff"
+                android:textSize="14dp" />
+
+            <com.github.aakira.expandablelayout.ExpandableRelativeLayout
+                android:id="@+id/expandableLayout7"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_below="@+id/expandableButton4"
+                android:background="#ffcc80"
+                android:padding="16dp"
+                app:ael_duration="400"
+                app:ael_expanded="false"
+                app:ael_interpolator="accelerate"
+                app:ael_orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="#FFFFFF"
+                    android:text="Youth Ablaze Network is an arm of the Glorious Fountain Ministries put together to help create a platform where young people will discover purpose as they are empowered and given the opportunity to fulfill destiny. Our mission is to FUND, EQUIP, DIRECT and SET ABLAZE young people for God with the conciousness of taking over thier world for Jesus. To reach young people with the life transforming gospel of christ of God till they become ablaze for God, starting from Warri, our Jerusalem,and then to the rest of the world."
+                    />
+            </com.github.aakira.expandablelayout.ExpandableRelativeLayout>
+        </LinearLayout>
+
+    </ScrollView>
+</LinearLayout>

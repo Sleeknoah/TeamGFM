@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+<group android:checkableBehavior="single">
+    <item android:id="@+id/home"
+        android:title="Home"
+        android:icon="@drawable/ic_home_black_48dp"
+        android:checked="true"/>
+    <item android:id="@+id/connect"
+          android:title="Watch us live"
+          android:icon="@drawable/ic_computer_black_48dp"/>
+    <item android:id="@+id/events"
+        android:title="Event"
+        android:icon="@drawable/ic_event_black_48dp"
+        />
+    <item android:id="@+id/store"
+        android:title="Online Store"
+        android:icon="@drawable/ic_shopping_cart_black_48dp"
+        />
+    <item android:id="@+id/download"
+        android:title="Downloads"
+        android:icon="@drawable/ic_cloud_download_black_48dp"
+        />
+
+</group>
+
+
+
+<item android:title="About">
+    <menu>
+        <item android:title="About TeamGFM"
+            android:id="@+id/yan"
+            />
+    </menu>
+</item>
+
+    <item android:title="Connect">
+        <menu>
+            <item android:title="Connect with us"
+                android:id="@+id/con"/>
+            <item android:title="TeamGFM Prayer Connect"
+                android:id="@+id/pray"/>
+        </menu>
+    </item>
+    <item android:title="">
+    <menu>
+    <item android:id="@+id/help"
+        android:title="Help and Feedback"
+        android:icon="@drawable/ic_help_black_48dp"/>
+
+    <item android:id="@+id/rate"
+        android:title="Rate us"
+        android:icon="@drawable/ic_favorite_black_48dp"/>
+    <item android:id="@+id/logout"
+        android:title="Signout"
+        android:icon="@drawable/ic_lock_black_48dp"/>
+    </menu>
+    </item>
+</menu>

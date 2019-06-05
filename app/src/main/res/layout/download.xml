@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal" android:layout_width="match_parent"
+    android:layout_height="70dp"
+    android:weightSum="10">
+    <TextView
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="7.1"
+        android:id="@+id/titleDown"
+        android:text="Mungu Wangu"
+        android:textSize="17sp"
+        android:layout_marginLeft="10dp"
+        android:layout_gravity="center_vertical"/>
+    <TextView
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight=".01"
+        android:id="@+id/uurl"
+        android:text="Mungu Wangu"
+        android:visibility="invisible"
+        android:textSize="20sp"
+        android:layout_margin="10dp"
+        android:layout_gravity="center_vertical"/>
+
+    <Button
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="2.9"
+        android:id="@+id/down"
+        android:layout_gravity="center_vertical"
+        android:backgroundTint="@color/colorPrimary"
+        android:text="Download"
+        android:textSize="12sp"
+        android:textColor="#fff"
+        android:layout_marginRight="10dp"/>
+</LinearLayout>

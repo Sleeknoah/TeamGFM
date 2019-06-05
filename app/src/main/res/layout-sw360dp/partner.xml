@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#fff"
+    android:gravity="top|center"
+    >
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Thank you for your generosity. You are making an everlasting difference"
+            android:textAlignment="center"
+            android:textSize="17dp"
+            android:textStyle="bold"
+            android:padding="10dp"/>
+    </LinearLayout>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Partner With Us Via:"
+        android:textStyle="bold"
+        android:textColor="#000"
+        android:textSize="20dp"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/part"
+        android:layout_marginTop="10dp"
+        />
+<Spinner
+    android:layout_width="match_parent"
+    android:layout_height="50dp"
+    android:layout_marginTop="15dp"
+    android:layout_marginRight="15dp"
+    android:layout_marginLeft="15dp"
+    android:dropDownWidth="match_parent"
+    android:dropDownSelector="@color/colorPrimary"
+    android:id="@+id/spinner"
+    android:background="@drawable/spinner"
+    android:paddingLeft="10dp"
+    android:layout_below="@+id/part"></Spinner>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:weightSum="6"
+        android:orientation="horizontal"
+        android:layout_marginTop="10dp">
+        <Spinner
+            android:layout_width="0dp"
+            android:layout_height="50dp"
+            android:background="@drawable/partneredit"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="10dp"
+            android:id="@+id/money"
+            android:layout_marginBottom="10dp"
+            android:layout_weight="2"
+            android:paddingLeft="10dp"
+            />
+        <EditText
+        android:layout_width="0dp"
+        android:layout_height="50dp"
+        android:background="@drawable/partneredit"
+        android:id="@+id/amount"
+        android:layout_weight="4"
+        android:layout_marginRight="15dp"
+        android:paddingLeft="15dp"
+        android:hint="Amount"
+        android:inputType="number"
+        />
+    </LinearLayout>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:backgroundTint="@color/colorPrimary"
+        android:text="CONTINUE TO PAYMENT OPTION"
+        android:textColor="#ffffff"
+        android:textStyle="bold"
+        android:textSize="20dp"
+        android:elevation="10dp"
+        android:padding="20dp"
+        />
+</LinearLayout>
